@@ -35,11 +35,6 @@ const refs = {
         type: ["error"],
         stack: stackBottomModal,
       });
-      
-      // alert({
-      //   text: 'You should write a correct category!',
-      //   stack: myStack
-      // });
       return
     }
     refs.handleSearchImg();
