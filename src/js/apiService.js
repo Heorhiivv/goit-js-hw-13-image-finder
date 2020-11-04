@@ -50,7 +50,7 @@ const refs = {
      console.log(document.documentElement.scrollHeight);
     }).then(res => {
       window.scrollTo({
-        top: document.documentElement.scrollHeight - 1450,
+        top: document.documentElement.scrollHeight - 1120,
         behavior: 'smooth',
        })
     })
