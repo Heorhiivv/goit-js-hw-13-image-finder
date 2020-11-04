@@ -18,10 +18,9 @@ const refs = {
   searchBtn: document.querySelector('.search_button'),
   gallery: document.querySelector('.gallery'),
   loadBtn: document.querySelector('.load_more'),
-
+ 
   key: '18890613-7ee27e7de9432b6f472efa8f6',
   page: 1,
-  
 
   startPageFunction (e) {
     e.preventDefault();
