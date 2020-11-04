@@ -1,6 +1,6 @@
 import galleryCard from './templates/galleryCard.hbs';
 import '@pnotify/core/dist/BrightTheme.css';
-import { alert, Stack } from "@pnotify/core";
+import { error, Stack } from "@pnotify/core";
 
 const stackBottomModal = new Stack({
   dir1: "up", // With a dir1 of "up", the stacks will start appearing at the bottom.
@@ -27,13 +27,14 @@ const refs = {
     refs.gallery.innerHTML = "";
     refs.page = 1;
     if (!refs.formArea.query.value) {
-      alert({
+      error({
         title: "Alert",
         text: "You should write a correct category!",
         width: "auto",
         type: ["error"],
         stack: stackBottomModal,
       });
+      refs.loadBtn.classList.add('is-hidden')
       return
     }
     refs.handleSearchImg();
